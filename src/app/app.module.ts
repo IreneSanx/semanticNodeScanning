@@ -25,6 +25,10 @@ import { DataGraphService } from './services/data-graph.service';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
+import { MainpageComponent } from './mainpage/mainpage.component';
+import { AppRoutingModule } from './app-routing.module';
+import { RouterModule, Routes} from '@angular/router';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,9 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
     ...D3_DIRECTIVES,
     ChooseObjectDialogComponent,
     StartScreenComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    MainpageComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +58,8 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
     MatIconModule,
     MatListModule,
     MatSidenavModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    AppRoutingModule
   ],
   providers: [D3Service, DbPediaService, DataGraphService],
   bootstrap: [AppComponent]

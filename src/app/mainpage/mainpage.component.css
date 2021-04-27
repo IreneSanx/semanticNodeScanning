@@ -1,0 +1,41 @@
+header img{
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+header button{
+    margin-right: 0.5em;
+}
+
+.contenedor {
+    padding: 2em;   /*Hago que todo lo que hay dentro de contenedor coja margenes de 2*/
+    width: 100%;
+}
+
+.contenedor::after{
+    clear: both;
+    content: "";
+    /*display: table;*/
+}
+
+#card-body{
+    float: left;
+    width: 50%;
+    padding-left: 2em;
+}
+
+#image{ 
+    float: right;
+    width: 50%;
+    padding-left: 2em;
+}
+
+#card-body button{
+    margin-left: 8em;
+    margin-top: 2em;
+}
+
+h1{
+    font-size: 6em;
+    object-position: center;
+}

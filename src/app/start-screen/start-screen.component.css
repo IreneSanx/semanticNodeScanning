@@ -4,8 +4,8 @@
 
 .sidenav-container {
   position: static;
-  top: 0;
-  bottom: 0;
+  top: 0em;
+  bottom: 0em;
   left: 0;
   right: 0;
   /* width: 25%; */
@@ -16,17 +16,30 @@
 
 .sidenav {
   width: 20%; 
-  background-color: rgb(163, 198, 217);
+  background-color: #f7c23b;
 }
 
 .sidenav-content {
+  padding-bottom: 8em;
   margin: 10%;
 }
 
 .sidenav-button {
-  background-color: rgb(163, 198, 217);
+  background-color: #f7c23b;
 }
 
 .mat-form-field {
   width: 100%;
+  padding-top: 1em;
 }
+
+.button{
+  margin-top: 1em;
+  margin-left: 2.5em;
+}
+
+
+h4{
+  text-align: center;
+}
+

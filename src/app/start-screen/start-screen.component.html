@@ -1,5 +1,5 @@
 <mat-sidenav-container class="sidenav-container">
-    <mat-sidenav class="sidenav" #sidenav mode="side" [(opened)]="opened">
+    <mat-sidenav class="sidenav" #sidenav mode="over" [(opened)]="opened">
         <div class="sidenav-content">
             <h4>Sparql Graph Explorer</h4>
             <!-- <h6>Select endpoint</h6> -->
@@ -61,8 +61,8 @@
             <div *ngIf="loading">
                 <mat-spinner></mat-spinner>
             </div>
-            <div lets-start-button *ngIf="conceptSelected">
-                <button mat-flat-button color="accent" [disabled]="initGraphButtonDisabled" (click)="startGraph()">Initialize graph</button>
+            <div class="button" lets-start-button *ngIf="conceptSelected">
+                <button mat-flat-button color="btn-dark" [disabled]="initGraphButtonDisabled" (click)="startGraph()">Initialize graph</button>
             </div>
         </div>
     </mat-sidenav>
